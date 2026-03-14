@@ -501,7 +501,7 @@ footer{padding:2rem 5vw;border-top:1px solid var(--border);display:flex;justify-
   <p style="color:var(--muted);font-size:.88rem">Full-time · Freelance · Remote — always open to great work</p>
   <div class="contact-grid reveal">
     <a href="tel:8525950567" class="cc"><span class="cc-type">Phone</span><span class="cc-val">+91 85259 50567</span></a>
-    <a href="/cdn-cgi/l/email-protection#761b171e170503141e174446464636111b171f1a5815191b" class="cc"><span class="cc-type">Email</span><span class="cc-val"><span class="__cf_email__" data-cfemail="2d404c454c5e584f454c1f1d1d1d6d4a404c4441034e4240">[email&#160;protected]</span></span></a>
+    <a href="mailto:mahasubha2000@gmail.com" class="cc"><span class="cc-type">Email</span><span class="cc-val">mahasubha2000@gmail.com</span></a>
     <a href="https://www.linkedin.com/in/subhalakshmi-m-267873233" target="_blank" class="cc"><span class="cc-type">LinkedIn</span><span class="cc-val">subhalakshmi-m</span></a>
     <a href="#" class="cc"><span class="cc-type">Location</span><span class="cc-val">Thanjavur, Tamil Nadu</span></a>
   </div>
@@ -512,7 +512,7 @@ footer{padding:2rem 5vw;border-top:1px solid var(--border);display:flex;justify-
   <span class="fm">Made with <span class="fh">♥</span> · Digital Marketing Executive</span>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 /* CURSOR */
 const cur=document.getElementById('cur'),ring=document.getElementById('cur-ring');
 let mx=0,my=0,rx=0,ry=0;
@@ -583,4 +583,11 @@ const mObs=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting)anim
 document.querySelectorAll('.metric-num[data-count]').forEach(el=>mObs.observe(el));
 
 /* skill bars fallback */
-const bObs=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting)trigger
+const bObs=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting)triggerBars();});},{threshold:.2});
+document.querySelectorAll('.skill-bars').forEach(el=>bObs.observe(el));
+
+/* hero card counters */
+document.querySelectorAll('.hc-num[data-count]').forEach(el=>setTimeout(()=>animCount(el),1100));
+</script>
+</body>
+</html>
